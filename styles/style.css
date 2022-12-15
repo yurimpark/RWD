@@ -3,3 +3,29 @@
 @import url(./a11y.css);
 @import url(./theme.css);
 @import url(./base.css);
+
+/* 공통 스타일 - 모바일*/
+
+body {
+  background-color: var(--yellow);
+}
+
+@media (min-width: 320px) {
+  body {
+    background-color: var(--green);
+  }
+}
+
+/* 중단점 - 769px 이상 (769px 이상부터 데스크탑) */
+@media (min-width: 769px) {
+  body {
+    background-color: var(--blue);
+  }
+}
+
+.news__videoContainer {
+  width: 70%;
+}
+.book__cover {
+  width: 200px;
+}
