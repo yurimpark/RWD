@@ -1,0 +1,70 @@
+.body {
+  margin: 0;
+}
+
+.container {
+  background-color: silver;
+  border: 1px solid red;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.group1 {
+  background: rgb(152, 41, 166);
+}
+.group2 {
+  background: pink;
+}
+.group3 {
+  background: lightgreen;
+}
+.group4 {
+  background: skyblue;
+}
+.group5 {
+  background: salmon;
+}
+.group6 {
+  background: violet;
+}
+.group7 {
+  background: aquamarine;
+}
+.group8 {
+  background: lightseagreen;
+}
+.group9 {
+  background: MediumPurple;
+}
+.group10 {
+  background: MidnightBlue;
+}
+.group11 {
+  background: Olive;
+}
+.group12 {
+  background: SandyBrown;
+}
+
+/* 모든 디바이스 */
+/* ^ 시작 * 포함 $ 끝 */
+[class^="group"] {
+  width: 50%;
+  height: 100px;
+}
+
+/* 768px 이상일 때 */
+@media (min-width: 768px) {
+  [class^="group"] {
+    width: 50%;
+    height: 100px;
+  }
+}
+
+/* 1280px 이상일 때 */
+@media (min-width: 1280px) {
+  [class^="group"] {
+    width: 25%;
+    height: 200px;
+  }
+}
