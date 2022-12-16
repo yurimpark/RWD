@@ -1,6 +1,49 @@
+* {
+  box-sizing: border-box;
+}
+
 .body {
   margin: 0;
 }
+/* 드래그+ctrl+shift+L하면 같은 단어 한번에 수정 가능 */
+.group1 .box {
+  background: rgb(152, 41, 166);
+}
+.group2 .box {
+  background: pink;
+}
+.group3 .box {
+  background: lightgreen;
+}
+.group4 .box {
+  background: skyblue;
+}
+.group5 .box {
+  background: salmon;
+}
+.group6 .box {
+  background: violet;
+}
+.group7 .box {
+  background: aquamarine;
+}
+.group8 .box {
+  background: lightseagreen;
+}
+.group9 .box {
+  background: MediumPurple;
+}
+.group10 .box {
+  background: MidnightBlue;
+}
+.group11 .box {
+  background: Olive;
+}
+.group12 .box {
+  background: SandyBrown;
+}
+
+/* 모든 디바이스 */
 
 .container {
   background-color: silver;
@@ -9,55 +52,21 @@
   flex-flow: row wrap;
 }
 
-.group1 {
-  background: rgb(152, 41, 166);
-}
-.group2 {
-  background: pink;
-}
-.group3 {
-  background: lightgreen;
-}
-.group4 {
-  background: skyblue;
-}
-.group5 {
-  background: salmon;
-}
-.group6 {
-  background: violet;
-}
-.group7 {
-  background: aquamarine;
-}
-.group8 {
-  background: lightseagreen;
-}
-.group9 {
-  background: MediumPurple;
-}
-.group10 {
-  background: MidnightBlue;
-}
-.group11 {
-  background: Olive;
-}
-.group12 {
-  background: SandyBrown;
-}
-
-/* 모든 디바이스 */
 /* ^ 시작 * 포함 $ 끝 */
 [class^="group"] {
-  width: 50%;
-  height: 100px;
+  width: 100%;
+  margin: 0;
+}
+
+.box {
+  height: 150px;
+  margin: 0 24px;
 }
 
 /* 768px 이상일 때 */
 @media (min-width: 768px) {
   [class^="group"] {
     width: 50%;
-    height: 100px;
   }
 }
 
@@ -65,6 +74,5 @@
 @media (min-width: 1280px) {
   [class^="group"] {
     width: 25%;
-    height: 200px;
   }
 }
