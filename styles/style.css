@@ -99,6 +99,22 @@ input[type="search"] {
   padding: var(--spacing-base) var(--spacing-lg);
 }
 
+/* 공통 메인 콘텐츠 섹션 제목 */
+[class*="__title"] {
+  margin-bottom: var(--spacing-base);
+}
+
+[class*="__koTitle"] {
+  font-size: var(--text-md);
+  font-weight: 700;
+}
+
+.sprite {
+  color: white;
+  background-color: blue;
+  height: 3.75rem;
+}
+
 /* 공통 추천 서적 */
 .book {
   background-color: lightgreen;
@@ -303,10 +319,12 @@ input[type="search"] {
     margin-left: auto;
     margin-right: auto;
     grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto;
     grid-template-areas:
       "news news news news news news news news news news news news"
       "book book book book twitter twitter twitter twitter twitter favorite favorite favorite"
       "book book book book . board board board board board board board";
+    gap: var(--spacing-base);
   }
 }
 
