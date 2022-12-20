@@ -13,7 +13,6 @@ body *::after {
 /* [class] {
   margin: 0;
 } */
-
 a {
   color: inherit;
   text-decoration: none;
@@ -43,31 +42,21 @@ video {
 
 /* 반응형 Iframe */
 
-.news__videoContainer {
-  width: auto;
-}
-
-.iframeWrapper {
-  background-color: blueviolet;
-  width: 100%;
-  height: 0 !important;
-  position: relative;
+.iframeRatio-21-9 {
+  aspect-ratio: 21/9;
 }
 .iframeRatio-16-9 {
-  padding-top: 56.25%;
-}
-.iframeRatio-21-9 {
-  padding-top: 42.857142857142855%;
+  aspect-ratio: 16/9;
 }
 .iframeRatio-4-3 {
-  padding-top: 75%;
+  aspect-ratio: 4/3;
+}
+.iframeRatio-1-1 {
+  aspect-ratio: 1/1;
 }
 
 .iframeWrapper iframe {
   display: block;
-  /* position: absolute;
-  top: 0;
-  left: 0; */
   width: 100%;
   height: 100%;
 }
