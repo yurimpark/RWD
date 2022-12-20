@@ -256,6 +256,18 @@ input[type="search"] {
   padding-top: var(--spacing-sm);
 }
 
+/* 모바일 인기 사이트 */
+.favorite__item {
+  margin-top: var(--spacing-sm);
+}
+
+.favorite__link::after {
+  content: attr(data-tooltip);
+  color: var(--accent-favorite);
+  font-size: var(--text-sm);
+  margin-left: var(--spacing-xs);
+}
+
 /* 공통 인기 사이트 */
 .favorite {
   /* background-color: aquamarine; */
