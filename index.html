@@ -5,13 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>웹카페 - 반응형 웹</title>
-    <!-- 사이트 파비콘 이미지 -->
     <link
       rel="shortcut icon"
       href="./assets/images/common/favicon.ico"
       type="image/x-icon"
     />
-    <!-- 런처 아이콘 -->
     <link
       rel="apple-touch-icon"
       href="./assets/images/common/apple-touch-icon.png"
@@ -135,10 +133,10 @@
       <section class="news">
         <h2 class="news__title sprite spriteNews">
           <span class="news__koTitle">새소식</span>
-          <span class="news__enTitle accentNews">WebCafe News</span></h2>
+          <span class="news__enTitle accentNews">WebCafe News</span>
         </h2>
         <figure class="news__videoContainer">
-          <video
+          <!-- <video
             class="news__video"
             poster="./assets/media/poster.jpg"
             controls
@@ -150,10 +148,16 @@
               srclang="en"
               label="English Caption"
             />
-          </video>
-          <!-- <div class="iframeWrapper iframeRatio-16-9">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/554aOV9iV7s" allowfullscreen></iframe>
-          </div> -->
+          </video> -->
+          <div class="iframeWrapper iframeRatio-16-9">
+            <iframe
+              width="560"
+              height="315"
+              xzx
+              src="https://www.youtube.com/embed/554aOV9iV7s"
+              allowfullscreen
+            ></iframe>
+          </div>
           <figcaption class="a11yHidden">구글 개발자 이야기</figcaption>
         </figure>
         <p class="news__summary">
@@ -165,19 +169,22 @@
           진출의 본보기가 되고 있는 개발사 세 곳과 함께 했습니다.
         </p>
         <time class="news__date" datetime="2022-07-21T14:03:23">
-          <i class="far fa-calendar-alt accentNews" aria-hidden="true"></i
+          <span class="far fa-calendar-alt accentNews" aria-hidden="true"></span
           >2022.07.21
         </time>
       </section>
       <section class="board">
         <h2 class="board__title sprite spriteBoard">
           <span class="board__koTitle">게시판</span>
-        <span class="board__enTitle accentBoard">WebCafe Board</span>
+          <span class="board__enTitle accentBoard">WebCafe Board</span>
         </h2>
         <ul class="board__list">
           <li class="board__item">
             <a href="/" class="board__link">
-              <i class="far fa-dot-circle accentBoard" aria-hidden="hidden"></i
+              <span
+                class="far fa-dot-circle accentBoard"
+                aria-hidden="hidden"
+              ></span
               >HTML5 표준 명세서를 읽는 방법
             </a>
             <time class="board__date" datetime="2022-07-21T11:24:30"
@@ -186,7 +193,10 @@
           </li>
           <li class="board__item">
             <a href="/" class="board__link">
-              <i class="far fa-dot-circle accentBoard" aria-hidden="hidden"></i
+              <span
+                class="far fa-dot-circle accentBoard"
+                aria-hidden="hidden"
+              ></span
               >CSS를 활용한 애니메이션
             </a>
             <time class="board__date" datetime="2022-07-21T11:24:30"
@@ -195,7 +205,10 @@
           </li>
           <li class="board__item">
             <a href="/" class="board__link">
-              <i class="far fa-dot-circle accentBoard" aria-hidden="hidden"></i
+              <span
+                class="far fa-dot-circle accentBoard"
+                aria-hidden="hidden"
+              ></span
               >프론트엔드 프레임워크 전격 해부
             </a>
             <time class="board__date" datetime="2022-07-21T11:24:30"
@@ -204,7 +217,10 @@
           </li>
           <li class="board__item">
             <a href="/" class="board__link">
-              <i class="far fa-dot-circle accentBoard" aria-hidden="hidden"></i
+              <span
+                class="far fa-dot-circle accentBoard"
+                aria-hidden="hidden"
+              ></span
               >웹표준 그리고 정보접근성에 대하여
             </a>
             <time class="board__date" datetime="2022-07-21T11:24:30"
@@ -213,7 +229,10 @@
           </li>
           <li class="board__item">
             <a href="/" class="board__link">
-              <i class="far fa-dot-circle accentBoard" aria-hidden="hidden"></i>
+              <span
+                class="far fa-dot-circle accentBoard"
+                aria-hidden="hidden"
+              ></span>
               웹카페 유튜브 라이브 참여는 오늘 자정까지 메일로 신청 가능
             </a>
             <time class="board__date" datetime="2022-07-21T11:24:30"
@@ -222,7 +241,10 @@
           </li>
         </ul>
         <a href="/" title="게시판" class="board__more">
-          <i class="far fa-plus-square accentBoard" aria-hidden="hidden"></i
+          <span
+            class="far fa-plus-square accentBoard"
+            aria-hidden="hidden"
+          ></span
           >더보기
         </a>
       </section>
@@ -240,10 +262,10 @@
               data-tooltip="레이아웃을 배우자"
               rel="noopener noreferrer"
             >
-              <i
+              <span
                 class="fas fa-external-link-alt accentFavorite"
                 aria-hidden="true"
-              ></i>
+              ></span>
               Learn CSS Layout
             </a>
           </li>
@@ -255,10 +277,10 @@
               data-tooltip="게이머처럼 Flex"
               rel="noopener noreferrer"
             >
-              <i
+              <span
                 class="fas fa-external-link-alt accentFavorite"
                 aria-hidden="true"
-              ></i>
+              ></span>
               Flexbox Froggy
             </a>
           </li>
@@ -270,10 +292,10 @@
               data-tooltip="농장주 되기 Grid"
               rel="noopener noreferrer"
             >
-              <i
+              <span
                 class="fas fa-external-link-alt accentFavorite"
                 aria-hidden="true"
-              ></i>
+              ></span>
               CSS Grid Garden
             </a>
           </li>
@@ -285,10 +307,10 @@
               data-tooltip="최고의 웹교과서 MDN"
               rel="noopener noreferrer"
             >
-              <i
+              <span
                 class="fas fa-external-link-alt accentFavorite"
                 aria-hidden="true"
-              ></i>
+              ></span>
               MDN Web Docs
             </a>
           </li>
@@ -297,7 +319,7 @@
       <article class="twitter">
         <h2 class="twitter__title sprite spriteTwitter">
           <span class="twitter__koTitle">트위터</span>
-        <span class="twitter__enTitle accentTwitter">WebCafe Twitter</span>
+          <span class="twitter__enTitle accentTwitter">WebCafe Twitter</span>
         </h2>
         <div class="twitter__container">
           <dl class="twitter__userInfo">
@@ -327,7 +349,7 @@
             문의주시기 바랍니다.
           </p>
           <time class="twitter__date" datetime="2021-07-21T15:03:25">
-            <i class="far fa-clock accentTwitter" aria-hidden="true"></i
+            <span class="far fa-clock accentTwitter" aria-hidden="true"></span
             >일주일전
           </time>
         </div>
