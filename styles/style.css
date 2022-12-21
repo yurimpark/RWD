@@ -429,6 +429,11 @@ input[type="search"] {
   }
 
   /* 모바일 푸터 */
+  .appFooter {
+    font-size: var(--text-sm);
+  }
+
+  /* 모바일 주소 */
   .address {
     display: flex;
     flex-flow: column nowrap;
@@ -564,7 +569,7 @@ input[type="search"] {
 
   /* 데스크탑 푸터 */
   .appFooter {
-    text-align: center;
+    align-items: center;
   }
 }
 /* 고해상도 배경이미지 미디어쿼리 */
